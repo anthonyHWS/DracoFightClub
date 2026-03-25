@@ -35,3 +35,76 @@ faqTrigger.forEach(trigger => {
         arrow.classList.toggle("active");
     })
 });
+
+
+
+// About
+
+// Timeline Swipe
+
+
+
+const track = document.querySelector(".slide-track");
+const slides = document.querySelectorAll(".slide-card");
+
+// Starting position
+let startX = 0;
+// Ending position
+let currentX = 0;
+// State
+let isDragging = false;
+// Card index
+let index = 0
+
+// POINTER DOWN
+track.addEventListener("pointerdown", (e) => {
+    startX = e.clientX;
+    currentX = startX;
+    isDragging = true;
+
+    // disable accidental animations
+    track.style.transition = "none";
+    track.setPointerCapture(e.pointerId);
+});
+
+// POINTER MOVE
+track.addEventListener("pointermove", (e) => {
+  if (!isDragging) return;
+
+  currentX = e.clientX;
+  let diff = currentX - startX;
+
+  const atFirst = index === 0;
+  const atLast = index === slides.length - 1;
+
+  // Edge resistance
+  if ((atFirst && diff > 0) || (atLast && diff < 0)) {
+    diff *= 0.3;
+  }
+
+  const movePercent = (diff / window.innerWidth) * 100;
+
+  track.style.transform = `translateX(${ -index * 100 + movePercent }%)`;
+});
+
+// POINTER UP
+track.addEventListener("pointerup", () => {
+  isDragging = false;
+  track.style.transition = "transform 0.3s ease";
+
+  const diff = currentX - startX;
+
+  if (diff < -50 && index < slides.length - 1) {
+    index++;
+  } else if (diff > 50 && index > 0) {
+    index--;
+  }
+
+  updateSlide();
+});
+
+// SNAP
+function updateSlide() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
