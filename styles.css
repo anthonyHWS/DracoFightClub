@@ -751,5 +751,149 @@ a {
 
 
 
+/* ------------------ */
+/* Individual Classes */
+/* ------------------ */
+
+/* BJJ */
+
+/* Hero */
+
+/* Standard class */
+
+#bjj1{
+    background-image: url(./assets/svg/jui-jitsu-1-svg.svg);
+}
+
+#bjj2{
+    background-image: url(./assets/svg/jui-jitsu-2-svg.svg);
+}
+
+#bjj3{
+    background-image: url(./assets/svg/jui-jitsu-3-svg.svg);
+}
+
+/* --------------- */
+/* Schedule -------*/
+/* --------------- */
+
+/* shedule Drop down */
+
+.schedule-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.schedule-combo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.dow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.schedule-combo h2{
+    margin-bottom: 0;
+}
+
+.arrow-schedule{
+    filter: invert(1);
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    transition: transform 0.5s ease;
+}
+
+.arrow-schedule.active{
+    transform: rotate(-180deg);
+}
+
+
+.schedule-combo > hr{
+    width: 100%;
+    height: 3px;
+    color: var(--color--background);
+    background-color: var(--color--background);
+}
+
+
+
+.schedule-slide{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.5s ease;
+}
+
+.schedule-slide.active{
+    grid-template-rows: 1fr;
+    overflow: visible;
+}
+
+.schedule-slide-inner{
+    overflow: hidden;
+}
+
+.class-row{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Contact */
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content >  *{
+    margin: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    border-radius: 3px;
+    min-width: 90%;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-copy);
+    width: 30%;
+}
+
+textarea{
+    min-width: 90%;
+    border-radius: 3px;
+}
+
+
+
 
 

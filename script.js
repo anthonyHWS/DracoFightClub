@@ -12,6 +12,8 @@ hamburgerDiv.addEventListener("click", ()=>{
     slideOut.classList.toggle("active");
 });
 
+// Schedule
+
 // Homepage
 
 // FAQ Dropdown
@@ -24,17 +26,19 @@ const faqSlide = document.querySelectorAll(".faq-slide-out");
 
 const faqArrow = document.querySelectorAll(".arrow");
 
+if (faqTrigger){
+  faqTrigger.forEach(trigger => {
+      trigger.addEventListener("click", () => {
+          const parent = trigger.closest(".faq-combo");
+          const slide = parent.querySelector(".faq-slide-out");
+          const arrow = parent.querySelector(".faq-question > .arrow")
 
-faqTrigger.forEach(trigger => {
-    trigger.addEventListener("click", () => {
-        const parent = trigger.closest(".faq-combo");
-        const slide = parent.querySelector(".faq-slide-out");
-        const arrow = parent.querySelector(".faq-question > .arrow")
+          slide.classList.toggle("active");
+          arrow.classList.toggle("active");
+      })
+  });
 
-        slide.classList.toggle("active");
-        arrow.classList.toggle("active");
-    })
-});
+};
 
 
 
@@ -46,6 +50,8 @@ faqTrigger.forEach(trigger => {
 
 const track = document.querySelector(".slide-track");
 const slides = document.querySelectorAll(".slide-card");
+
+if (track){
 
 // Starting position
 let startX = 0;
@@ -106,5 +112,25 @@ track.addEventListener("pointerup", () => {
 // SNAP
 function updateSlide() {
   track.style.transform = `translateX(-${index * 100}%)`;
-}
+};
 
+};
+
+
+// Schedule
+
+const scheduleTrigger = document.querySelectorAll(".dow");
+
+if (scheduleTrigger){
+
+scheduleTrigger.forEach(trig => {
+  trig.addEventListener("click", () => {
+    const main = trig.closest(".schedule-combo");
+    const slider = main.querySelector(".schedule-slide");
+    const arrow = main.querySelector(".arrow-schedule");
+    slider.classList.toggle("active");
+    arrow.classList.toggle("active");
+  });
+});
+
+};
