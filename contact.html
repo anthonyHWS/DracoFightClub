@@ -17,6 +17,16 @@
         <div class="nav-hamburger">
             <span class="hamburger"></span>
         </div>
+        <div class="nav-buttons">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./classes.html">Classes</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="./contact.html" class="button red">Call Us!</a>
+        </div>
     </div>
 
 
@@ -37,68 +47,36 @@
         </div>
     </div>
 
+    <section class="contact">
+        <h1 style="margin-top: 0;">Draco Fight Camp</h1>
+        <h3>BJJ, MMA & Kids Jiu Jitsu in Hua Hin</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-    <!-- Contact Heading -->
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="tel" name="phone" placeholder="Phone number">
 
-    <div class="section">
-        <div class="section-inner">
-            <div class="contact-content">
-                <h1 style="margin-bottom: 0;">Contact</h1>
-                <h3>Interested in coming to train?
-                    Send us a message or give us a call!
-                </h3>
-            </div>
-        </div>
-    </div>
+            <textarea name="message" placeholder="Your message..." required></textarea>
 
-    <!-- Contact Details -->
-     <div class="section">
-        <div class="section-inner">
-            <div class="class-row">
-                <h3>Phone Number</h3>
-                <h3>XXXXXXXXXXX</h3>
-            </div>
-        </div>
-     </div>
+            <button style="color: white;" type="submit" class="button red">Send</button>
 
-    <!-- Form -->
-
-    <div class="section">
-        <div class="section-inner">
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  
-            <!-- Name -->
-            <input type="text" id="name" placeholder="Name" name="name" required>
-
-            <!-- Name -->
-            <input type="text" id="email" placeholder="Email" name="email" required>
-
-            <!-- Email -->
-            <input type="text" id="phone" name="phone" placeholder="Contact Number" required>
-
-            <!-- Message -->
-            <textarea id="message" name="message" rows="10" required></textarea>
-
-            <!-- Optional: subject -->
-            <input type="hidden" name="_subject" value="New contact form submission">
-
-            <!-- Submit -->
-            <button class="submit-button" type="submit">Send Message</button>
-
-            </form>
-        </div>
-    </div>
+        </form>
+    </section>
 
 
-     <!-- Google Maps -->
+    <!-- Google Maps -->
 
     <div class="section">
         <div class="section-inner">
             <div class="maps-content">
-                <h2 style="margin-bottom: 0px;">Location</h2>
-                <p>click the button to open on Google Maps</p>
-                <a href="https://maps.app.goo.gl/RTS5ajvDn8Z3bSTY7" class="button red" id="mapsButton">Location</a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8141453789085!2d99.9342284!3d12.528468199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fdad739877fa89%3A0x5616aaaa03ad44fc!2sDRACO%20FIGHT%20CAMP!5e0!3m2!1sen!2s!4v1774352713650!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="maps-grid">
+                    <div class="maps-contact">
+                        <h2 style="margin-bottom: 0px;">Location</h2>
+                        <p>click the button to open on Google Maps</p>
+                        <a href="https://maps.app.goo.gl/RTS5ajvDn8Z3bSTY7" class="button red" id="mapsButton">Location</a>
+                    </div>
+                    <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8141453789085!2d99.9342284!3d12.528468199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fdad739877fa89%3A0x5616aaaa03ad44fc!2sDRACO%20FIGHT%20CAMP!5e0!3m2!1sen!2s!4v1774352713650!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -116,35 +94,40 @@
             <br>
         </div>
     </div>
-     <!-- Footer -->
+
+
+    <!-- Footer -->
 
     <div class="section footer">
-        <div class="section-inner">
-            <div class="footer-social">
-                <h3>Follow our Socials</h3>
-                <div class="footer-svgs">
-                    <img class="social" src="./assets/svg/facebook.svg" alt="facebook link">
-                    <img class="social" src="./assets/svg/instagram.svg" alt="facebook link">
-                    <img class="social" src="./assets/svg/x.svg" alt="facebook link">
+        <div class="section-inner footer">
+            <div class="desktop-footer">
+                <div class="footer-social">
+                    <h3>Follow our Socials</h3>
+                    <div class="footer-svgs">
+                        <img class="social" src="./assets/svg/facebook.svg" alt="facebook link">
+                        <img class="social" src="./assets/svg/instagram.svg" alt="facebook link">
+                        <img class="social" src="./assets/svg/x.svg" alt="facebook link">
+                    </div>
                 </div>
-            </div>
-            <div class="footer-nav">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./classes.html">Classes</a>
-                <a href="./schedule.html">Schedule</a>
-                <a href="./contact.html">Contact</a>
-                <br>
-                <h3>Draco Fight Camp</h3>
+                <div class="footer-nav">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./classes.html">Classes</a>
+                    <a href="./schedule.html">Schedule</a>
+                    <a href="./contact.html">Contact</a>
+                    <br>
+                    
+                </div>
+                <div class="footer-contact">
+                    <h4>Phone Number: XXXXXXXXXX</h4>
+                    <h4>Email: XXXXXXXXXXX</h4>
+                    <h4>Adress: XXXXXXXXXXXX</h4>
+                </div>
             </div>
         </div>
     </div>
 
-    
-
-    
-
-
     <script src="./script.js"></script>
+    
 </body>
 </html>

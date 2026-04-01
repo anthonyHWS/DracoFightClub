@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-
-
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -16,6 +14,16 @@
         </div>
         <div class="nav-hamburger">
             <span class="hamburger"></span>
+        </div>
+        <div class="nav-buttons">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./classes.html">Classes</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="./contact.html" class="button red">Call Us!</a>
         </div>
     </div>
 
@@ -37,6 +45,7 @@
         </div>
     </div>
 
+
     <!-- Schedule Heading -->
 
     <div class="section">
@@ -47,7 +56,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Monday</h2>
+                    <h3>Monday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -70,7 +79,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Tuesday</h2>
+                    <h3>Tuesday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -93,7 +102,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Wednesday</h2>
+                    <h3>Wednesday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -116,7 +125,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Thursday</h2>
+                    <h3>Thursday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -139,7 +148,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Friday</h2>
+                    <h3>Friday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -162,7 +171,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Saturday</h2>
+                    <h3>Saturday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -185,7 +194,7 @@
             </div>
             <div class="schedule-combo">
                 <div class="dow">
-                    <h2>Sunday</h2>
+                    <h3>Sunday</h3>
                     <img class="arrow-schedule" src="./assets/svg/arrow-down.svg" alt="arrow">
                 </div>
                 <hr>
@@ -211,15 +220,19 @@
 
 
 
-     <!-- Google Maps -->
+    <!-- Google Maps -->
 
     <div class="section">
         <div class="section-inner">
             <div class="maps-content">
-                <h2 style="margin-bottom: 0px;">Location</h2>
-                <p>click the button to open on Google Maps</p>
-                <a href="https://maps.app.goo.gl/RTS5ajvDn8Z3bSTY7" class="button red" id="mapsButton">Location</a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8141453789085!2d99.9342284!3d12.528468199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fdad739877fa89%3A0x5616aaaa03ad44fc!2sDRACO%20FIGHT%20CAMP!5e0!3m2!1sen!2s!4v1774352713650!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="maps-grid">
+                    <div class="maps-contact">
+                        <h2 style="margin-bottom: 0px;">Location</h2>
+                        <p>click the button to open on Google Maps</p>
+                        <a href="https://maps.app.goo.gl/RTS5ajvDn8Z3bSTY7" class="button red" id="mapsButton">Location</a>
+                    </div>
+                    <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8141453789085!2d99.9342284!3d12.528468199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fdad739877fa89%3A0x5616aaaa03ad44fc!2sDRACO%20FIGHT%20CAMP!5e0!3m2!1sen!2s!4v1774352713650!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -232,43 +245,45 @@
             <div class="cta-content">
                 <h2>Final CTA</h2>
                 <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quo dolor officiis.</P>
-                <a href="" class="button generic">Contact</a>
+                <a href="./contact.html" class="button generic">Contact</a>
             </div>
             <br>
         </div>
     </div>
 
 
-
     <!-- Footer -->
 
     <div class="section footer">
-        <div class="section-inner">
-            <div class="footer-social">
-                <h3>Follow our Socials</h3>
-                <div class="footer-svgs">
-                    <img class="social" src="./assets/svg/facebook.svg" alt="facebook link">
-                    <img class="social" src="./assets/svg/instagram.svg" alt="facebook link">
-                    <img class="social" src="./assets/svg/x.svg" alt="facebook link">
+        <div class="section-inner footer">
+            <div class="desktop-footer">
+                <div class="footer-social">
+                    <h3>Follow our Socials</h3>
+                    <div class="footer-svgs">
+                        <img class="social" src="./assets/svg/facebook.svg" alt="facebook link">
+                        <img class="social" src="./assets/svg/instagram.svg" alt="facebook link">
+                        <img class="social" src="./assets/svg/x.svg" alt="facebook link">
+                    </div>
                 </div>
-            </div>
-            <div class="footer-nav">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./classes.html">Classes</a>
-                <a href="./schedule.html">Schedule</a>
-                <a href="./contact.html">Contact</a>
-                <br>
-                <h3>Draco Fight Camp</h3>
+                <div class="footer-nav">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./classes.html">Classes</a>
+                    <a href="./schedule.html">Schedule</a>
+                    <a href="./contact.html">Contact</a>
+                    <br>
+                    
+                </div>
+                <div class="footer-contact">
+                    <h4>Phone Number: XXXXXXXXXX</h4>
+                    <h4>Email: XXXXXXXXXXX</h4>
+                    <h4>Adress: XXXXXXXXXXXX</h4>
+                </div>
             </div>
         </div>
     </div>
 
-    
-
-    
-
-
     <script src="./script.js"></script>
+    
 </body>
 </html>
