@@ -241,7 +241,6 @@ a {
 @media(min-width: 1024px){
     .nav{
         width: 100%;
-        height: 17vh;
         display: grid;
         grid-template-columns: 1fr 1.5fr 0.75fr;
         grid-template-rows: 1fr;
@@ -1067,6 +1066,22 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#s1{
+    background-image: url(./assets/images/draco-fight-camp-BJJ.webp);
+}
+
+#s2{
+    background-image: url(./assets/images/draco-fight-camp-grappelling.webp);
+}
+
+#s3{
+    background-image: url(./assets/images/draco-fight-camp-kids2.webp);
+}
+
+#s4{
+    background-image: url(./assets/images/draco-fight-camp-kids3.webp);
 }
 
 .slide-image > h2{
