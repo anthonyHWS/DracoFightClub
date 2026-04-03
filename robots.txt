@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary icon/asset folders from search results
+Disallow: /assets/images/favicon_io/
+
+Sitemap: https://dracofightcamp.com/sitemap.xml
